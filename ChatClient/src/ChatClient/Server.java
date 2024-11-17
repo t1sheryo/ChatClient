@@ -3,6 +3,7 @@ package ChatClient;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import ChatClient.Client;
 
 public class Server {
     private static List<ClientHandler> clients = new ArrayList<>();
@@ -10,7 +11,7 @@ public class Server {
     private static final String SERVER_ADDRESS = "127.0.0.1";
 
     public static void main(String[] args) throws IOException{
-        ServerSocket serverSocket = new ServerSocket(8000);
+        ServerSocket serverSocket = new ServerSocket(SERVER_PORT);
         System.out.println("Server was created. Waiting for users connection...");
 
         while(true){

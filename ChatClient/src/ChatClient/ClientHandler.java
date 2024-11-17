@@ -3,6 +3,7 @@ package ChatClient;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import ChatClient.Client;
 
 // class to spread messages from one client to others automatically
 public class ClientHandler implements Runnable{
